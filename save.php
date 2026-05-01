@@ -5,10 +5,8 @@ $codigo = $_POST['codigo'];
 $descripcion = $_POST['descripcion'];
 $destino = $_POST['destino'];
 
-$sql = "INSERT INTO envios (codigo, descripcion, destino)
-        VALUES ('$codigo', '$descripcion', '$destino')";
-
-$conn->query($sql);
+$conn->query("INSERT INTO envios (codigo, descripcion, destino)
+VALUES ('$codigo', '$descripcion', '$destino')");
 
 header("Location: index.php");
 ?>

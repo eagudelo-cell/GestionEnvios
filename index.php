@@ -1,9 +1,13 @@
 <?php include("db.php"); ?>
 
-<h2>Lista de Envíos</h2>
+<link rel="stylesheet" href="styles.css">
+
+<div class="container">
+<h1>Lista de Envíos</h1>
+
 <a href="create.php">Nuevo envío</a>
 
-<table border="1">
+<table>
 <tr>
     <th>ID</th>
     <th>Código</th>
@@ -30,5 +34,4 @@ while($row = $result->fetch_assoc()) {
 <?php } ?>
 
 </table>
-
-<!-- prueba -->
+</div>
